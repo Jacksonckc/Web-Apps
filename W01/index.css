@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Apple Chancery', sans-serif;
     margin: 1rem auto;
     max-width: 850px;
 }
@@ -10,7 +10,7 @@ body {
 header {
     padding: 1rem;
     background-color: yellowgreen;
-    border-radius: 15px;
+    border-radius: 25px;
     text-align: center;
     font-size: large;
 }
@@ -19,6 +19,7 @@ header {
     float: right;
     margin-right: 30px;
     margin-top: 10px;
+    margin-left: 15px;
     width: 200px;
     border-radius: 1em;
     box-shadow: 5px 5px 20px rgb(0 0 0);
@@ -32,8 +33,9 @@ main {
 footer {
     padding: 1rem;
     background-color: yellowgreen;
-    border-radius: 15px;
+    border-radius: 25px;
     text-align: center;
     font-size: small;
 }
+
 
