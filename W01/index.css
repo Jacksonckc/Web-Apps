@@ -21,6 +21,7 @@ header {
     margin-top: 10px;
     margin-left: 15px;
     width: 200px;
+    height: auto;
     border-radius: 1em;
     box-shadow: 5px 5px 20px rgb(0 0 0);
 }
