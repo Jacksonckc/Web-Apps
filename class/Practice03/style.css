@@ -1,0 +1,27 @@
+#container {
+    display: flex;
+    background-color: #E6EBF0;
+    justify-content: space-around;
+    align-items: center;
+    height: 688px;
+}
+
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding: ;
+}
+
+
+.price {
+    color: #12aaeb;
+    display: inline;
+    vertical-align: text-top;
+}
+
+.yellow {
+    background-color: #ffcf2d;
+    color: white;
+    border: none;
+}
