@@ -1,16 +1,22 @@
+@media only screen and (min-width: 700px) {
+
+    body {
+        background-color: #E6EBF0;
+    }
 #container {
     display: flex;
-    background-color: #E6EBF0;
     justify-content: space-around;
     align-items: center;
     height: 688px;
+    padding: 0px 30px;
 }
 
 
 .card {
     background-color: white;
     text-align: center;
-    padding: ;
+    padding: 30px 40px;
+    
 }
 
 
@@ -20,8 +26,79 @@
     vertical-align: text-top;
 }
 
-.yellow {
+#yellow {
+    background-color: #ffcf2d;
+    /* color: white; */
+    border: none;
+}
+
+.heading {
+    color: #12aaeb;
+}
+
+.popular {
+    background-color: #12aaeb;
+    color: white;
+}
+
+.button {
+    box-shadow: black;
+    box-shadow: 2px 2px;
+}
+
+}
+@media only screen and (max-width: 700px) {
+
+    body {
+        background-color: #E6EBF0;
+    }
+#container {
+    position: relative;
+    display: inline;
+    background-color: #E6EBF0;
+    justify-content: space-around;
+    align-items: center;
+    height: 688px;
+    padding: 0px 30px;
+}
+
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding: 30px 40px;
+    
+}
+
+#card-2 {
+    position: absolute;
+}
+
+
+.price {
+    color: #12aaeb;
+    display: inline;
+    vertical-align: text-top;
+}
+
+#yellow {
     background-color: #ffcf2d;
     color: white;
     border: none;
+}
+
+.heading {
+    color: #12aaeb;
+}
+
+.popular {
+    background-color: #12aaeb;
+    color: white;
+}
+
+.button {
+    box-shadow: 2px 2px;
+}
+
+
 }
