@@ -73,7 +73,9 @@
 #card-2 {
     position: absolute;
 }
-
+#card-2-content {
+    position: relative;
+}
 
 .price {
     color: #12aaeb;
@@ -94,6 +96,7 @@
 .popular {
     background-color: #12aaeb;
     color: white;
+    text-align: center;
 }
 
 .button {
