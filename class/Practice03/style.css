@@ -70,12 +70,15 @@
     
 }
 
-#card-2 {
+
+/* #card-2 {
     position: absolute;
-}
-#card-2-content {
-    position: relative;
-}
+} */
+
+/* #card-2-content {
+    position: relative; 
+    text-align: center;
+}  */
 
 .price {
     color: #12aaeb;
