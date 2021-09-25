@@ -1,4 +1,4 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 10000px) {
 
     body {
         background-color: #FFFEFF;
@@ -61,134 +61,14 @@
     }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 700px){
-
-    body {
-        background-color: #FFFEFF;
-        position: relative;
-        margin: 0;
-        font-family: 'Gemunu Libre', sans-serif;
-
-    }
-
-    header {
-        text-align: center;
-        background-color: #05223C;
-        color: white;
-        position: sticky;
-        top: 0;
-        padding: 10px;
-    }
-
+@media only screen and (max-width: 700px) {
     #container {
-        display: grid;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
-        justify-content: space-around;
-        justify-items: center;
-        align-items: stretch;
-        padding: 10px 30px;
-        min-height: 600px;
     }
-
-    .screen-shot {
-        background-color: #F2F1F2;
-        width: 90%;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 500px;
-        border: 1px solid black;
-        margin-bottom: 10px;
-
-    }
-
-    .content {
-        padding: 2px 5px;
-    }
-
-    img {
-        width: 100%;
-        border: 1px solid black;
-
-    }   
-
-    .heading {
-        color: #12aaeb;
-        background-color: #3F5263;
-        color: white;
-        padding-left: 6px;
-        margin: 0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-
-    }
-
-
 }
 
-
 @media only screen and (max-width: 450px) {
-
-    body {
-        background-color: #FFFEFF;
-        position: relative;
-        margin: 0;
-        font-family: 'Gemunu Libre', sans-serif;
-    }
-
-    header {
-        text-align: center;
-        background-color: #05223C;
-        color: white;
-        position: sticky;
-        top: 0;
-        padding: 10px;
-    }
-
     #container {
-        display: grid;
         grid-template-columns: repeat(1, minmax(200px, 1fr));
-        justify-content: space-around;
-        justify-items: center;
-
-        align-items: stretch;
-        padding: 10px 30px;
-        min-height: 600px;
-    }
-
-    .screen-shot {
-        background-color: #F2F1F2;
-        width: 90%;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 500px;
-        border: 1px solid black;
-        margin-bottom: 10px;
-
-
-    }
-
-    .content {
-        padding: 2px 5px;
-    }
-
-    img {
-        width: 100%;
-        border: 1px solid black;
-
-    }   
-
-    .heading {
-        color: #12aaeb;
-        background-color: #3F5263;
-        color: white;
-        padding-left: 6px;
-        margin: 0;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-
     }
 }
