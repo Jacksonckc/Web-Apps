@@ -4,6 +4,7 @@
         background-color: #FFFEFF;
         position: relative;
         margin: 0;
+        font-family: 'Gemunu Libre', sans-serif;
     }
 
     header {
@@ -17,8 +18,9 @@
 
     #container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-        justify-content: space-around;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        justify-content: stretch;
+        justify-items: center;
         align-items: stretch;
         padding: 10px 30px;
         min-height: 600px;
@@ -33,6 +35,7 @@
         justify-content: flex-start;
         min-height: 500px;
         border: 1px solid black;
+        margin-bottom: 10px;
 
     }
 
@@ -64,6 +67,8 @@
         background-color: #FFFEFF;
         position: relative;
         margin: 0;
+        font-family: 'Gemunu Libre', sans-serif;
+
     }
 
     header {
@@ -77,8 +82,9 @@
 
     #container {
         display: grid;
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
         justify-content: space-around;
+        justify-items: center;
         align-items: stretch;
         padding: 10px 30px;
         min-height: 600px;
@@ -93,6 +99,7 @@
         justify-content: flex-start;
         min-height: 500px;
         border: 1px solid black;
+        margin-bottom: 10px;
 
     }
 
@@ -121,12 +128,13 @@
 }
 
 
-@media only screen and (min-width: 200px) and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 
     body {
         background-color: #FFFEFF;
         position: relative;
         margin: 0;
+        font-family: 'Gemunu Libre', sans-serif;
     }
 
     header {
@@ -140,8 +148,10 @@
 
     #container {
         display: grid;
-        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
         justify-content: space-around;
+        justify-items: center;
+
         align-items: stretch;
         padding: 10px 30px;
         min-height: 600px;
@@ -156,6 +166,8 @@
         justify-content: flex-start;
         min-height: 500px;
         border: 1px solid black;
+        margin-bottom: 10px;
+
 
     }
 
