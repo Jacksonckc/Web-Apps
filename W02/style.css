@@ -7,6 +7,26 @@
         font-family: 'Gemunu Libre', sans-serif;
     }
 
+    #return {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        font-size: xx-large;
+        color: white;
+        padding: 7px 20px;
+    }
+
+    #return a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    
+    .screen-shot a {
+        text-decoration: none;
+      }
+
     header {
         text-align: center;
         background-color: #05223C;
@@ -14,6 +34,7 @@
         position: sticky;
         top: 0;
         padding: 10px;
+        z-index: 1;
     }
 
     #container {
@@ -57,6 +78,8 @@
         margin: 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        position: sticky;
+        top: 60px;
 
     }
     footer {
@@ -66,7 +89,8 @@
         position: sticky;
         bottom: 0;
         text-align: center;
-        padding: 10px;
+        padding: 1px;
+        font-size: small;
     }
 }
 
