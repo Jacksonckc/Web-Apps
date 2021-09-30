@@ -12,13 +12,19 @@
 }
 
 
+
 .card {
     background-color: white;
     text-align: center;
     padding: 30px 40px;
-    
 }
 
+.popular {
+    background-color: #12aaeb;
+    color: white; 
+    text-align: center;
+    padding: 15px;  
+}
 
 .price {
     color: #12aaeb;
@@ -36,10 +42,7 @@
     color: #12aaeb;
 }
 
-.popular {
-    background-color: #12aaeb;
-    color: white;
-}
+
 
 .button {
     box-shadow: black;
