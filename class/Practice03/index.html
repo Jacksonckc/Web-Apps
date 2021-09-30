@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -21,25 +21,27 @@
         <h1 class="price">3</h1>
         <p class="price">99</p>
         <p>per month</p>
-        <button type="button" id="grey01" class="button">SIGN UP</button>
+        <button type="button" id="grey01" onclick="addAlert()"class="button">SIGN UP</button>
       </div>
 
-      <div>
-        <div id="card-2-content">
-          <div class="popular">MOST POPULAR</div>
-          <div class="card" id="card-2">
-            <img src="./image/business.png" alt="business image" />
-            <h4 class="heading">BUSINESS</h4>
-            <p>UNLIMITED Domains</p>
-            <p>UNLIMITED Storage</p>
-            <p>FREE Domain</p>
-            <p class="price">$</p>
-            <h1 class="price">5</h1>
-            <p class="price">99</p>
-            <p>per month</p>
-            <button type="button" id="yellow" onclick="changeToGold()" class="button">SIGN UP</button>
-          </div>
+      <div class="card" id="card-2">
+        <div id="popular">MOST POPULAR</div>
+        <img src="./image/business.png" alt="business image" />
+        <h4 class="heading">BUSINESS</h4>
+        <p>UNLIMITED Domains</p>
+        <p>UNLIMITED Storage</p>
+        <p>FREE Domain</p>
+        <div id="price-most-popular1">
+        <p class="price">$</p>
+        <!--</div>-->
+        <!--<div id="price-most-popular2">-->
+        <h1 class="price">5</h1>
+        <!--</div>-->
+        <!--<div id="price-most-popular3">-->
+        <p class="price">99</p>
         </div>
+        <p>per month</p>
+        <button type="button" id="yellow" onclick="changeToGold(); addAlert()" class="button">SIGN UP</button>
       </div>
 
       <div class="card" id="card-3">
@@ -52,7 +54,7 @@
         <h1 class="price">9</h1>
         <p class="price">99</p>
         <p>per month</p>
-        <button type="button" id="grey02" class="button">SIGN UP</button>
+        <button type="button" id="grey02" onclick="addAlert()" class="button">SIGN UP</button>
       </div>
     </div>
   </body>
