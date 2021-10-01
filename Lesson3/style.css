@@ -1,3 +1,18 @@
+
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Josefin+Sans:ital,wght@0,100;1,400&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ephesis', cursive;
+
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #icon {
     float: left;
     width: 10%;
@@ -24,14 +39,26 @@ menu>li a:hover {
     color: black; 
 }
 
+main {
+    padding: 10px;
+}
+
+/* Colors */
+#hue {
+    width: 100%;
+}
+
 @media screen and (max-width: 450px) {
 
     #icon {
         float: none;
         display: block;
+        width: 50%;
+        margin: auto;
     }
     menu {
         display: block;
+        padding-left: 0;
     }    
     menu>li {
         margin: 3px;
