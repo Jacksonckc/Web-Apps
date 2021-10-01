@@ -1,0 +1,39 @@
+#icon {
+    float: left;
+    width: 10%;
+}
+
+menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+menu>li{
+    min-width: 15%;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+
+menu>li a:link {
+    text-decoration: none;
+}
+
+menu>li a:hover {
+    color: black; 
+}
+
+@media screen and (max-width: 450px) {
+
+    #icon {
+        float: none;
+        display: block;
+    }
+    menu {
+        display: block;
+    }    
+    menu>li {
+        margin: 3px;
+    }
+}
