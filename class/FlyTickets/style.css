@@ -91,7 +91,7 @@ footer {
 .white-content {
     font-size:16px;
     color: black;
-}
+} 
 
 @media (max-width: 600px) {
     header {
