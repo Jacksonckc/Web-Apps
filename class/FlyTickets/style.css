@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #CFCFCF;
 }
 
 .container {
@@ -9,7 +10,7 @@ body {
     border-radius: 10px;
     border: 2px ridge black;
     margin: auto;
-
+    background-color: white;
 }
 
 header {
