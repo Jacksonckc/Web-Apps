@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+.container {
+    width: 600px;
+    border-radius: 10px;
+    border: 2px ridge black;
+    margin: auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+
+#name {
+    padding: 0px 40px;
+    text-align: center;
+}
+    
+
+#logo {
+    padding: 0px 40px;
+    text-align: center;
+    font-size: small;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#blue{
+    display: flex;
+    justify-content: space-around;
+    background-color: #001B38;
+    color: white;
+}
+
+#blue img{
+    width: 90px;
+}
+
+#barcode {
+    padding: 20px;
+    text-align: center;
+}
+
+#barcode img {
+    width: 70%;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.destinations {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#white1, #white2 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: #F1F1F1;
+    color: #001B38;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+#white1>*, #white2>* {
+    width: 30%;
+}
+
+.white-headers {
+    font-size: 12px;
+    color: #001B38;
+}
+
+.white-content {
+    font-size:16px;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    header {
+        display:block;
+        
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+
+    #logo img {
+        width: 50%;
+    }
+}
