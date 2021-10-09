@@ -1,4 +1,4 @@
 
 function drop() {
-  document.getElementById("content").classList.add("mystyle");
+  document.getElementsByClassName("content")[0].classList.toggle("mystyle");
 }

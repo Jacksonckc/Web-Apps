@@ -83,11 +83,15 @@
         cursor: pointer;
     }
 
-    button:focus + ul, ul>* {
+    /* button:focus + ul, ul>* {
+        opacity: 1;
+        pointer-events: all;
+    } */
+
+    .mystyle {
         opacity: 1;
         pointer-events: all;
     }
-
 
 
     #top_bar {
