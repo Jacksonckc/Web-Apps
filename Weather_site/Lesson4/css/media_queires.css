@@ -71,6 +71,14 @@
         text-decoration: none;
     }
 
+    .content li:hover {
+        background-color: green;
+
+    }
+
+    .content li {
+        padding: 5px
+    }
 
     #menu {
         display: inline;
@@ -89,7 +97,7 @@
     } */
 
     .mystyle {
-        opacity: 1;
+        opacity: 0.9;
         pointer-events: all;
     }
 

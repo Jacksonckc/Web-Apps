@@ -53,7 +53,7 @@ nav ul li a:hover {
     color: green;
     text-decoration: underline;
     width: initial;
-    font-size: x-large;  
+    /* font-size: x-large;   */
 }
 
 main {
@@ -161,13 +161,14 @@ footer img {
     background-color: black;
     margin: 0;
     padding: 5px;
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #copyRight a {
     color: lightgreen;
     text-decoration: underline;
-
 }
 
