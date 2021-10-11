@@ -12,7 +12,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
     #top_bar {
         padding: 0 2%;
     }
@@ -27,13 +27,22 @@
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: 580px) {
 
     header {
         display: flex;
         height: 50px;
         align-items: center;
-        /* width: 100%; */
+        width: 100%;
+    }
+
+    header h1 {
+        padding-left: 2.5%;
+
+    }
+
+    #motto {
+        padding-left: 5%;
     }
 
     nav {
@@ -60,21 +69,24 @@
         transition: all 1s ease;
     }
 
+
+
     .content a, .content a:active, .content a:visited {
         color: white;
         align-items: center;
+        width: 150px;
     }
 
     .content a:hover {
-        background-color: green;
         color: white;
-        text-decoration: none;
     }
 
     .content li:hover {
         background-color: green;
 
     }
+
+    
 
     .content li {
         padding: 5px
@@ -86,7 +98,7 @@
         text-align: center;
         height: 100%;
         background-color: none;
-        background-color: lightgreen;
+        background-color: #2CEC18;
         border: none;
         cursor: pointer;
     }
@@ -175,17 +187,33 @@ article img {
 }
 
 #contact_info {
-    width: 100%;
+    width: 80%;
     position: relative;
     align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 5%;
+}
+
+#contact_info h5 {
+    text-align: center;
+}
+
+#contact_info img {
+    width: 5%;
     padding-left: 20px;
 }
 
 #social_media {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    right: 30px;
+    right: 50px;
     top: 50%;
     transform: translate(0%, -50%);
+    text-align: end;
+    width: 200%;
 }
 
 }

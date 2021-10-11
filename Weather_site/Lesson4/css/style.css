@@ -84,7 +84,7 @@ h2 {
 }
 
 #banner {
-    height: 160px;
+    height: 150px;
     width: 100%;
 }
 
@@ -147,6 +147,7 @@ footer img {
 #contact_info {
     align-self: flex-end;
     width: 30%;
+    
 }
 
 #contact_info>* {
@@ -163,7 +164,7 @@ footer img {
     background-color: black;
     margin: 0;
     padding: 5px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
