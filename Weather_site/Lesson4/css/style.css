@@ -18,7 +18,8 @@ body p {
     height: 200px;
     align-items: center;
     padding: 0px 20%;
-    background-color: lightgreen;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
 }
 
 #website_logo {
@@ -129,7 +130,8 @@ article p {
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
-    background-color: lightgreen;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
 }
 
 #map {
