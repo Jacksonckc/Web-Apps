@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="../../normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media_queires.css" />
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
     <title>Preston Town</title>
   </head>
   <body>
+    <div id="saturday_notice">
+      Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
     <header>
       <div id="top_bar">
         <img
@@ -30,7 +33,7 @@
         <button id="menu" onclick="drop()">&#9776;</button>
         <ul class="content">
           <li><a href="../Lesson3/index.html">Home</a></li>
-          <li><a href="*">Preston</a></li>
+          <li ><a href="*" id="active">Preston</a></li>
           <li><a href="*">Soda Springs</a></li>
           <li><a href="*">Fish Haven</a></li>
           <li><a href="*">Storm Center</a></li>
@@ -45,7 +48,7 @@
       <div id="banner_box">
         <div id="summary">
           Weather Summary
-          <div>
+          <div >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
             error?
           </div>

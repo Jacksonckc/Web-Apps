@@ -2,9 +2,15 @@
     #top_bar {
         padding: 0 10%;
     }
-    nav,main {
+    
+    main {
         padding: 8px 10%;
     
+    }
+
+    nav {
+        padding: 0px 10%;
+
     }
     #contact_box {
         padding: 8px 12%;
@@ -16,9 +22,13 @@
     #top_bar {
         padding: 0 2%;
     }
-    nav,main {
+    main {
         padding: 8px 2%;
     
+    }
+    nav {
+        padding: 0px 2%;
+
     }
     #contact_box {
         padding: 8px 2%;
@@ -61,7 +71,7 @@
         width: 15%;
         margin: 0;
         padding: 0;
-        
+        border: none;
     }
 
     .content {
@@ -84,22 +94,28 @@
     .content a, .content a:active, .content a:visited {
         color: white;
         align-items: center;
-        width: 150px;
+        width: 100%;
+        display: block;
     }
 
-    .content a:hover {
+    nav .content li a:hover {
         color: white;
+        text-decoration: none;
     }
 
     .content li:hover {
         background-color: green;
-
+        font-size: large;  
     }
 
     
 
     .content li {
-        padding: 5px
+        max-width: 100%;
+        height: 25px;
+        padding: 0;
+        /* background: rgb(34,193,195);
+        background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(163,237,22,1) 100%); */
     }
 
     #menu {
@@ -113,6 +129,13 @@
         cursor: pointer;
     }
 
+
+    /* #menu:focus {
+        animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+    } */
     /* button:focus + ul, ul>* {
         opacity: 1;
         pointer-events: all;

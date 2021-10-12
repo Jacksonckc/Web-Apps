@@ -15,3 +15,27 @@ window.onclick = function(event) {
     }
   }
 }
+
+function activePage(){
+  document.getElementById("active").parentElement.style.backgroundColor="lightblue";
+}
+
+activePage()
+
+
+function getDate(){
+  const date = new Date()
+  const day = date.getDay()
+  return day  
+}
+
+
+function showNotice() {
+
+  if (getDate() == 5){
+    document.getElementById('saturday_notice').style.display = 'block'
+  }
+}
+
+showNotice()
+

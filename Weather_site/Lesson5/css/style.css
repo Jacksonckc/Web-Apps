@@ -9,7 +9,19 @@ body p {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* header {
+    position: sticky;
+    top: 0;
+} */
 
+#saturday_notice {
+    display: none;
+    text-align: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(107,253,29,1) 32%, rgba(252,176,69,1) 100%);    font-size: larger;
+    height: 50px;
+    line-height: 50px;
+}
 
 #top_bar {
     display: flex;
@@ -28,11 +40,12 @@ height: 100%;}
 nav {
     color: white;
     background-color: black;
-    padding: 8px 20%;
+    padding: 0px 20%;
     cursor: pointer;
     position: sticky;
     top: 0;
     z-index: 2;
+    border: 1px solid black;
 }
 
 #menu {
@@ -43,22 +56,34 @@ nav *{
     list-style-type: none;
 }
 
-nav ul {
+nav .content {
     display: flex;    
     justify-content: space-between;
     padding-left: 0;
 }
 
- nav ul li a:visited, nav ul li a:active, a
-{ color: white; 
-text-decoration: none;}
+nav .content li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+}
 
-nav ul li a:hover {
+nav .content li a:visited, nav .content li a:active, a
+{ color: white; 
+text-decoration: none;
+}
+
+nav .content li a:hover {
     color: green;
     text-decoration: underline;
-    width: initial;
-    /* font-size: x-large;   */
 }
+
+.content {
+    margin: 0;
+}
+
+
+
 
 main {
     padding: 8px 20%;
@@ -80,7 +105,8 @@ h2 {
 }
 
 #summary {
-    background-color: ivory;
+    background-color: rgb(255, 255, 240,0.6);
+  
     width: 150px;
     position: absolute;
     top: 50%;
@@ -88,11 +114,13 @@ h2 {
     border: 2px solid black;
     border-radius: 5px;
     transform: translate(0%, -55%);
-    opacity: 0.7;
+    /* opacity: 0.3; */
     
 }
 
-
+#summary div {
+    color: rgba(0,0,0);    
+}
 
 #banner {
     height: 150px;
@@ -117,12 +145,9 @@ table, th, td {
 td {
     height: 50px;
     width: 50px;
+    padding: 0px;
 }
 
-#second_row td {
-    padding: 0;
-    margin: 0;
-}
 
 #first_row{
     background: rgb(34,193,195);
@@ -133,6 +158,7 @@ td {
 
 #second_row img {
     height: 50px;
+    vertical-align: bottom;
 }
 
 
