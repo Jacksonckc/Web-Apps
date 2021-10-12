@@ -166,24 +166,28 @@
 }
 
 article {
-    display: grid;
-    grid-template-rows: 20px 1fr 100px;
-}
-
-article h3 {
-    padding-left: 10px;
-    grid-row: 1;
-}
-
-article p {
-    grid-row: 2;
+    text-align: center;
 }
 
 article img {
+    
     float: none;
     margin: auto;
-    grid-row: 3;
+    width: 90%;
+    margin-top: 30px;
+    
+
 }
+
+article h3 {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+article p {
+}
+
+
 
 #contact_box {
     display: grid;
@@ -202,8 +206,9 @@ article img {
     align-self: center;
     background-color: white;
     border-radius: 10px;
-    padding: 5%;
+    padding: 5% 5%;
     margin: 5%;
+    text-align: start;
 }
 
 #contact_info h5 {
