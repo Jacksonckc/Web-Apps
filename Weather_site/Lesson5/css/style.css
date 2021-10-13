@@ -186,6 +186,12 @@ article p {
     padding-left: 10px;
 }
 
+#clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #contact_box {
     padding: 8px 22%;
     display: flex;
