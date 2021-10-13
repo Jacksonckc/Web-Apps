@@ -34,6 +34,16 @@
         padding: 8px 2%;
 
     }
+    td {
+        height: 75px;
+        width: 75px;
+        padding: 0px;
+    }
+    
+    #second_row img {
+        height: 75px;
+        vertical-align: bottom;
+    }
 }
 
 
@@ -181,74 +191,85 @@
     border: none;
 }
 
-#d_forecast {
-    background-color: lightslategray;
-    border:2px solid black;
-    padding: 10px;
-    text-align: center; 
-}
+    #d_forecast {
+        background-color: lightslategray;
+        border:2px solid black;
+        padding: 10px;
+        text-align: center; 
+    }
 
-article {
-    text-align: center;
-}
-
-article img {
+    td {
+        height: 60px;
+        width: 60px;
+        padding: 0px;
+    }
     
-    float: none;
-    margin: auto;
-    width: 90%;
-    margin-top: 30px;
-    
+    #second_row img {
+        height: 60px;
+        vertical-align: bottom;
+    }
 
-}
+    article {
+        text-align: center;
+    }
 
-article h3 {
-    padding: 10px;
-    padding-bottom: 0;
-}
+    article img {
+        
+        float: none;
+        margin: auto;
+        width: 90%;
+        margin-top: 30px;
+        
+
+    }
+
+    article h3 {
+        padding: 10px;
+        padding-bottom: 0;
+    }
 
 
 
-#contact_box {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
+    #contact_box {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
 
-#map {
-    grid-row: 2;
-    height: 100%;
-    width: 100%;
-}
+    #map {
+        grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
 
-#contact_info {
-    width: 80%;
-    position: relative;
-    align-self: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 5% 5%;
-    margin: 5%;
-    text-align: start;
-}
+    #contact_info {
+        width: 80%;
+        position: relative;
+        align-self: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5% 5%;
+        margin: 5%;
+        text-align: start;
+    }
 
-#contact_info h5 {
-    text-align: center;
-}
+    #contact_info h5 {
+        text-align: center;
+    }
 
-#contact_info img {
-    width: 5%;
-    padding-left: 20px;
-}
+    #contact_info img {
+        width: 5%;
+        padding-left: 20px;
+    }
 
-#social_media {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translate(0%, -50%);
-    text-align: end;
-    width: 200%;
-}
+    #social_media {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        text-align: end;
+        width: 200%;
+    }
 
 }
