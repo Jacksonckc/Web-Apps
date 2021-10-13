@@ -9,11 +9,6 @@ body p {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* header {
-    position: sticky;
-    top: 0;
-} */
-
 #saturday_notice {
     display: none;
     text-align: center;
@@ -42,8 +37,6 @@ nav {
     background-color: black;
     padding: 0px 20%;
     cursor: pointer;
-    position: sticky;
-    top: 0;
     z-index: 2;
     border: 1px solid black;
 }
