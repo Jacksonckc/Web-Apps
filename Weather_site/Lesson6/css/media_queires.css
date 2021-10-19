@@ -66,10 +66,7 @@
 
     }
 
-    header h1 {
-        padding-left: 2.5%;
 
-    }
 
     #motto {
         padding-left: 5%;
@@ -170,7 +167,10 @@
         text-align: center;
     }
 
-
+    header #top_bar div h1 {
+        padding-left: 2.5%;
+        font-size: large;
+    }
 
 
 

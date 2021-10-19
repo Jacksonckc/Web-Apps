@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="../../normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media_queires.css" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
     <script src="./js/index.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
     <title>Preston Town</title>
   </head>
   <body>
     <div id="saturday_notice">
-      Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
     </div>
     <header>
       <div id="top_bar">
@@ -33,7 +35,7 @@
         <button id="menu" onclick="drop()">&#9776;</button>
         <ul class="content">
           <li><a href="../Lesson3/index.html">Home</a></li>
-          <li ><a href="*" id="active">Preston</a></li>
+          <li><a href="*" id="active">Preston</a></li>
           <li><a href="*">Soda Springs</a></li>
           <li><a href="*">Fish Haven</a></li>
           <li><a href="*">Storm Center</a></li>
@@ -47,12 +49,26 @@
 
       <div id="banner_box">
         <div id="summary">
-          <h3>Weather Summary</h3> 
-          <div >
-            Currently:  <br> High: <br> Wind Chill: <br> Humidity: <br>Wind Speed: 
+          <h3>Weather Summary</h3>
+          <div>
+            Currently: <span id="current-weather"></span> <br />
+            High: <span id="high">3</span><br />
+            Wind Chill: <span id="wind-chill"></span> <br />
+            Humidity: <span id="humidity"></span> <br />
+            Wind Speed: <span id="wind-speed">5</span>
           </div>
         </div>
-        <img id="banner" src="./image/preston-banner.jpeg" alt="Banner" />
+        <picture>
+          <source
+            media="(max-width:580px)"
+            srcset="./image/banner-small.jpeg"
+          />
+          <source
+            media="(max-width:1000px)"
+            srcset="./image/banner-medium.jpeg"
+          />
+          <img src="./image/banner-large.jpeg" alt="banner" id="banner" />
+        </picture>
       </div>
 
       <div id="d_forecast">Five Day Forecast</div>
@@ -65,11 +81,11 @@
           <td>Sun</td>
         </tr>
         <tr id="second_row">
-          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
-          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
-          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
-          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
-          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+          <td><img src="./image/weather.jpeg" alt="sunny" /></td>
+          <td><img src="./image/weather.jpeg" alt="sunny" /></td>
+          <td><img src="./image/weather.jpeg" alt="sunny" /></td>
+          <td><img src="./image/weather.jpeg" alt="sunny" /></td>
+          <td><img src="./image/weather.jpeg" alt="sunny" /></td>
         </tr>
       </table>
       <article id="clearfix">
@@ -121,5 +137,6 @@
         </b>
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   </body>
 </html>

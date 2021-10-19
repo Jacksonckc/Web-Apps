@@ -39,3 +39,11 @@ function showNotice() {
 
 showNotice()
 
+WebFont.load({
+  google: {
+    families: [
+      'Josefin Sans'
+    ]
+  }
+});
+
