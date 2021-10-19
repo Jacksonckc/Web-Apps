@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media_queires.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="./js/index.js" defer></script>
+    <title>Preston Town</title>
+  </head>
+  <body>
+    <div id="saturday_notice">
+      Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+      <div id="top_bar">
+        <img
+          src="../Lesson3/image/Seasoning-icon.png"
+          alt="Icon"
+          id="website_logo"
+        />
+        <div>
+          <h1>Seasoning</h1>
+          <p id="motto">
+            What seasoning do you put in your life today? Check it out!
+          </p>
+        </div>
+      </div>
+      <nav>
+        <button id="menu" onclick="drop()">&#9776;</button>
+        <ul class="content">
+          <li><a href="../Lesson3/index.html">Home</a></li>
+          <li ><a href="*" id="active">Preston</a></li>
+          <li><a href="*">Soda Springs</a></li>
+          <li><a href="*">Fish Haven</a></li>
+          <li><a href="*">Storm Center</a></li>
+          <li><a href="*">Galley</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Preston Idaho</h2>
+
+      <div id="banner_box">
+        <div id="summary">
+          <h3>Weather Summary</h3> 
+          <div >
+            Currently:  <br> High: <br> Wind Chill: <br> Humidity: <br>Wind Speed: 
+          </div>
+        </div>
+        <img id="banner" src="./image/preston-banner.jpeg" alt="Banner" />
+      </div>
+
+      <div id="d_forecast">Five Day Forecast</div>
+      <table>
+        <tr id="first_row">
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+          <td>Sat</td>
+          <td>Sun</td>
+        </tr>
+        <tr id="second_row">
+          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+          <td><img src="./image/weather.jpeg" alt="sunny"/></td>
+        </tr>
+      </table>
+      <article id="clearfix">
+        <img src="./image/article_img.jpeg" alt="weather" />
+        <h3>Lorem, ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          reiciendis accusamus, obcaecati corporis itaque fuga mollitia unde
+          perspiciatis. Ipsum quo suscipit consequatur esse facere a
+          perspiciatis recusandae veniam porro architecto!
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div id="contact_box">
+        <img id="map" src="./image/rexburg_map.gif" alt="map" />
+
+        <div id="contact_info">
+          <h5>Contact Us!</h5>
+          <p>
+            <img src="./image/location.png" alt="location" />Lorem, ipsum dolor.
+          </p>
+          <p>
+            <img src="./image/phone.png" alt="location" />Lorem, ipsum dolor.
+          </p>
+          <p>
+            <img src="./image/email.png" alt="location" />Lorem, ipsum dolor.
+          </p>
+          <span id="social_media"
+            ><a href="https://www.facebook.com/"
+              ><img src="./image/facebook.gif" alt="facebook" id="facebook"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./image/instagram.gif"
+                alt="instagram"
+                id="instagram" /></a
+          ></span>
+        </div>
+      </div>
+
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jackson Chan | Idaho |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+        </b>
+      </p>
+    </footer>
+  </body>
+</html>

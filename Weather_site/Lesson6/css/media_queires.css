@@ -1,0 +1,275 @@
+@media (max-width: 1000px) {
+    #top_bar {
+        padding: 0 10%;
+    }
+    
+    main {
+        padding: 8px 10%;
+    
+    }
+
+    nav {
+        padding: 0px 10%;
+
+    }
+    #contact_box {
+        padding: 8px 12%;
+
+    }
+}
+
+@media (max-width: 720px) {
+    #top_bar {
+        padding: 0 2%;
+    }
+    main {
+        padding: 8px 2%;
+    
+    }
+    nav {
+        padding: 0px 2%;
+
+    }
+    #contact_box {
+        padding: 8px 2%;
+
+    }
+    td {
+        height: 75px;
+        width: 75px;
+        padding: 0px;
+    }
+    
+    #second_row img {
+        height: 75px;
+        vertical-align: bottom;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+
+    body {
+        position: relative;
+    }
+    header {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        /* border-left: 2px solid black;
+        border-right: 2px solid black; */
+
+    }
+
+    header h1 {
+        padding-left: 2.5%;
+
+    }
+
+    #motto {
+        padding-left: 5%;
+    }
+
+    nav {
+        background-color: lightgreen;
+        height: 100%;
+        width: 15%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .content {
+        /* display: none; */
+        position: absolute;
+        flex-direction: column;
+        background-color: lightgreen;
+        opacity: 0;
+        pointer-events: none;
+        width: 150px;
+        right: 0;
+        z-index: 1;
+        text-align: center;
+        margin: 0;
+        transition: all 1s ease;
+    }
+
+
+
+    .content a, .content a:active, .content a:visited {
+        color: white;
+        align-items: center;
+        width: 100%;
+        display: block;
+    }
+
+    nav .content li a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .content li:hover {
+        background-color: green;
+        font-size: large;  
+    }
+
+    
+
+    .content li {
+        max-width: 100%;
+        height: 25px;
+        padding: 0;
+        /* background: rgb(34,193,195);
+        background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(163,237,22,1) 100%); */
+    }
+
+    #menu {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        background-color: none;
+        background-color: #2CEC18;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    /* #menu:focus {
+        animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+    } */
+    /* button:focus + ul, ul>* {
+        opacity: 1;
+        pointer-events: all;
+    } */
+
+    .mystyle {
+        opacity: 0.9;
+        pointer-events: all;
+    }
+
+
+    #top_bar {
+        height: 80px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    #top_bar div>* {
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    #banner_box {
+    display: grid;
+    grid-row: 1fr 1fr;
+
+    }
+
+    #summary {
+    position: static;
+    transform: none;
+    grid-row: 2;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+    #d_forecast {
+        background-color: lightslategray;
+        border:2px solid black;
+        padding: 10px;
+        text-align: center; 
+    }
+
+    td {
+        height: 60px;
+        width: 60px;
+        padding: 0px;
+    }
+    
+    #second_row img {
+        height: 60px;
+        vertical-align: bottom;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    article img {
+        
+        float: none;
+        margin: auto;
+        width: 90%;
+        margin-top: 30px;
+        
+
+    }
+
+    article h3 {
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+
+
+    #contact_box {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #map {
+        grid-row: 2;
+        height: 100%;
+        width: 100%;
+    }
+
+    #contact_info {
+        width: 80%;
+        position: relative;
+        align-self: center;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5% 5%;
+        margin: 5%;
+        text-align: start;
+    }
+
+    #contact_info h5 {
+        text-align: center;
+    }
+
+    #contact_info img {
+        width: 5%;
+        padding-left: 20px;
+    }
+
+    #social_media {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translate(0%, -50%);
+        text-align: end;
+        width: 200%;
+    }
+
+}
