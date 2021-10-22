@@ -107,6 +107,7 @@ h2 {
     border-radius: 5px;
     padding: 10px;
     line-height: 25px;
+    transition: 2s;
 }
 
 #summary h3 {
