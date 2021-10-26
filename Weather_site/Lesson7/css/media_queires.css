@@ -8,6 +8,10 @@
         padding: 0px 10%;
 
     }
+    #contact_box {
+        padding: 8px 12%;
+
+    }
 }
 
 @media (max-width: 720px) {
@@ -32,6 +36,10 @@
     }
     figcaption {
         display: none;
+    }
+    #contact_box {
+        padding: 8px 2%;
+
     }
     
 }
