@@ -18,6 +18,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
         if (!entry.isIntersecting) {
             return;
         } else{
+            entry.target.style.animation = 'bounce ease-in 500ms'
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }
