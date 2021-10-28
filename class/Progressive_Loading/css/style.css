@@ -93,8 +93,8 @@ h2 {
     height: auto;
     margin: auto;
     /* animation-name: bounce; */
-    animation-timing-function: ease-in;
-    animation-duration: 500ms;
+    /* animation-timing-function: ease-in;
+    animation-duration: 500ms; */
 }
 
 @keyframes bounce {
@@ -113,6 +113,15 @@ h2 {
 [data-src]:hover {
     box-shadow: 5px 5px 5px black;
 }
+
+/* figure img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  } */
 
 figure {
     width: 100%;
