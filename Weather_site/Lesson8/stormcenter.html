@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/index.js" defer></script>
+    <title>Stormcenter</title>
+  </head>
+  <body>
+    <body>
+        <div id="saturday_notice">
+          Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+          park pavilion.
+        </div>
+        <header>
+          <div id="top_bar">
+            <img
+              src="../Lesson3/image/Seasoning-icon.png"
+              alt="Icon"
+              id="website_logo"
+            />
+            <div>
+              <h1>Seasoning</h1>
+              <p id="motto">
+                What seasoning do you put in your life today? Check it out!
+              </p>
+            </div>
+          </div>
+          <nav>
+            <button id="menu" onclick="drop()">&#9776;</button>
+            <ul class="content">
+              <li><a href="../Lesson3/index.html">Home</a></li>
+              <li><a href="../Lesson6/preston-6.html">Preston</a></li>
+              <li><a href="*">Soda Springs</a></li>
+              <li><a href="*">Fish Haven</a></li>
+              <li><a href="./stormcenter.html" id="active">Storm Center</a></li>
+              <li><a href="../Lesson7/gallery-7.html">Galley</a></li>
+            </ul>
+          </nav>
+        </header>
+        <h3>Please fill out the form below to report the current weather!</h3>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required/>
+            </div> 
+            <div>
+                <label for="zip">Zip Code:</label>
+                <input type="number" name="zip" id="zip" required/>
+            </div>
+            <div>
+                <label for="date">Storm Date:</label>
+                <input type="date" name="date" id="date" />
+            </div>
+            <div>
+                <label for="list">Storm Type:</label>
+                <div>
+                    <input list="lists" name="list" id="list" />
+                    <datalist id="lists">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>  
+            </div>
+            <div>
+                <label for="severity">Severity(1-10):</label>
+                <div>
+                    <input
+                    type="range"
+                    name="severity"
+                    id="severity"
+                    min="1"
+                    max="10"
+                    value="1"
+                    onchange="get_severity()"
+                    />
+                    <span id='severity_value'></span>
+                </div>
+            </div>
+            <div>
+                <label for="region">Region:</label>
+                <select name="region" id="region">
+                <option value="Select Region" disabled="disabled" selected>
+                    Select Region
+                </option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </div>
+            <div>
+                <label for="danger-level">Danger Level:</label>
+                <div>
+                <p>Yes</p>
+                <input type="radio" name="danger-level" id="dangerous" />
+                <p>No</p>
+                <input type="radio" name="danger-level" id="xdangerous" />
+                </div>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea name='comment' id='comment'></textarea>
+            </div>
+            <div class='buttons'>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+        <footer>
+            <div id="contact_box">
+              <img id="map" src="../Lesson6/image/rexburg_map.gif" alt="map" />
+      
+              <div id="contact_info">
+                <h5>Contact Us!</h5>
+                <p>
+                  <img src="../Lesson6/image/location.png" alt="location" />Preston Town
+                </p>
+                <p>
+                  <img src="../Lesson6/image/phone.png" alt="phone" />555-555-5555
+                </p>
+                <p>
+                  <img src="../Lesson6/image/email.png" alt="email" />wildseasoning@li.com
+                </p>
+                <span id="social_media"
+                  ><a href="https://www.facebook.com/"
+                    ><img src="../Lesson6/image/facebook.gif" alt="facebook" id="facebook"
+                  /></a>
+                  <a href="https://www.instagram.com/"
+                    ><img
+                      src="../Lesson6/image/instagram.gif"
+                      alt="instagram"
+                      id="instagram" /></a
+                ></span>
+              </div>
+            </div>
+      
+            <p id="copyRight">
+              <b
+                >&copy;2021 | Jackson Chan | Idaho |
+                <a href="https://www.byui.edu/online" target="_blank"
+                  >BYUI Online Learning</a
+                >
+              </b>
+            </p>
+          </footer>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>
