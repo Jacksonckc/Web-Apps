@@ -1,0 +1,22 @@
+img {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .dad-bg {
+    top: 5%;
+    position: absolute;
+    width: 50px;
+    padding: 10px;
+  }
+  
+  .dad-bg {
+    width: 40%;
+  }
+  
+  @media screen and (max-width: 740px) {
+    .dad-bg {
+      width: 30px;
+    }
+  }
+  
