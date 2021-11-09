@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    margin: 0px 20px;
+}
+main div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+
+}
+
+main div>*{
+    background-color: #B9B9CB;
+    border: 2px solid black;
+}
