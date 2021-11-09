@@ -1,6 +1,10 @@
 body {
     text-align: center;
     margin: 0px 10px;
+    color: blue;
+}
+p {
+    color: black;
 }
 main div{
     display: grid;

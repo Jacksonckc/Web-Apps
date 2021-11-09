@@ -17,15 +17,16 @@ fetch(requestURL)
         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname)
 
         let bd = document.createElement('p')
-        bd.textContent = prophets[i].birthdate
+        bd.textContent = 'Date of Birth: ' + prophets[i].birthdate
 
         let bp = document.createElement('p')
-        bp.textContent = prophets[i].birthplace
+        bp.textContent = 'Place of Birth: '+prophets[i].birthplace
 
         card.appendChild(h2);
-        card.appendChild(image);
         card.appendChild(bd)
         card.appendChild(bp)
+        card.appendChild(image);
+
 
 
         document.querySelector('div.cards').appendChild(card)
