@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
+body {
+  background-color: #f0f0f0;
+  font-family: roboto;
+}
+#person {
+  width: 400px;
+  margin: 120px auto 120px;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+  text-align: center;
+}
+
+#person>* {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#name {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
