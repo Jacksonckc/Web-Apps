@@ -28,14 +28,6 @@ function getDate() {
   return day;
 }
 
-function showNotice() {
-  if (getDate() == 5) {
-    document.getElementById('saturday_notice').style.display = 'block';
-  }
-}
-
-showNotice();
-
 WebFont.load({
   google: {
     families: ['Josefin Sans'],

@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../../normalize.css" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./media.css">
+    <script src="./index.js" defer></script>
+    <title>Home Page</title>
+  </head>
+  <body>
     
-</body>
+    <header>
+      <div id="top_bar">
+        <img
+          src="../Lesson3/image/Seasoning-icon.png"
+          alt="Icon"
+          id="website_logo"
+        />
+        <div>
+          <h1>Seasoning</h1>
+          <p id="motto">
+            What seasoning do you put in your life today? Check it out!
+          </p>
+        </div>
+      </div>
+      <nav>
+        <button id="menu" onclick="drop()">&#9776;</button>
+        <ul class="content">
+          <li><a href="./index.html" id="active">Home</a></li>
+          <li><a href="../Lesson6/preston-6.html">Preston</a></li>
+          <li><a href=".">Soda Springs</a></li>
+          <li><a href=".">Fish Haven</a></li>
+          <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="../Lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="fish_heaven">
+        
+        <img src="./image/gallery13.jpeg" alt="fish heaven">
+      </div>
+      <div id="preston">
+      
+        <img src="./image/gallery14.jpeg" alt="preston">
+      </div> 
+      <div id="soda_springs">
+      
+        <img src="./image/gallery15.jpeg" alt="soda springs">
+      </div>
+
+
+    </main>
+    <footer>
+      <div id="contact_box">
+        <img id="map" src="../Lesson6/image/rexburg_map.gif" alt="map" />
+
+        <div id="contact_info">
+          <h5>Contact Us!</h5>
+          <p>
+            <img src="../Lesson6/image/location.png" alt="location" />Preston
+            Town
+          </p>
+          <p>
+            <img src="../Lesson6/image/phone.png" alt="phone" />555-555-5555
+          </p>
+          <p>
+            <img
+              src="../Lesson6/image/email.png"
+              alt="email"
+            />wildseasoning@li.com
+          </p>
+          <span id="social_media"
+            ><a href="https://www.facebook.com/"
+              ><img
+                src="../Lesson6/image/facebook.gif"
+                alt="facebook"
+                id="facebook"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="../Lesson6/image/instagram.gif"
+                alt="instagram"
+                id="instagram" /></a
+          ></span>
+        </div>
+      </div>
+
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jackson Chan | Idaho |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+        </b>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
 </html>
