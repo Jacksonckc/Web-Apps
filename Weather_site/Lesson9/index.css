@@ -93,7 +93,7 @@ main>* {
     padding: 0px;
     height: 70%;
     align-items: center;
-
+    transition: 1s;
 }
 
 main>*>div {

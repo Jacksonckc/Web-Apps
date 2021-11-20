@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Josefin+Sans:ital,wght@0,100;1,400&display=swap');
+
+body {
+    font-family: 'Akronim', cursive;
+    position: relative;
+}
+
+body p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#saturday_notice {
+    display: none;
+    text-align: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(107,253,29,1) 32%, rgba(252,176,69,1) 100%);    font-size: larger;
+    height: 50px;
+    line-height: 50px;
+    font-size: 100%;
+}
+
+#top_bar {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+    padding: 0px 20%;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
+    
+}
+
+#website_logo {
+height: 100%;}
+
+nav {
+    color: white;
+    background-color: black;
+    padding: 0px 20%;
+    cursor: pointer;
+    z-index: 2;
+    border: 1px solid black;
+}
+
+#menu {
+    display: none;
+}
+
+nav *{
+    list-style-type: none;
+}
+
+nav .content {
+    display: flex;    
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+nav .content li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 5px;
+}
+
+nav .content li a:visited, nav .content li a:active, a
+{ color: white; 
+text-decoration: none;
+}
+
+nav .content li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.content {
+    margin: 0;
+}
+
+
+
+
+main {
+    padding: 8px 20%;
+}
+
+main p {
+    font-size: larger;
+
+}
+
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner_box {
+    position: relative;
+}
+
+#summary {
+    background-color: rgb(255, 255, 240,0.6);
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 25px;
+    transition: 2s;
+}
+
+#summary h3 {
+    padding: 0px 0px;
+    margin: 5px;
+}
+
+#summary div {
+    color: rgba(0,0,0);    
+}
+
+#banner {
+    height: auto;
+    width: 100%;
+}
+
+#d_forecast{
+    padding-left: 15px;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+
+table, th, td {
+    border:1px solid black;
+}
+
+td {
+    height: 150px;
+    width: 100px;
+    padding: 0px;
+}
+
+#first_row{
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
+}
+
+#first_row td {
+    height: 50px;
+}
+
+#second_row>*:hover {
+    background-color: aquamarine;
+}
+
+#second_row>* {
+    transition: background-color 0.5s linear 1s;
+}
+
+#second_row td{
+    padding-top: 15px;
+}
+
+#second_row img {
+    width: 100%;
+}
+
+#second_row p {
+    margin: 5px;
+}
+article {
+    margin-top: 10px;
+    background-color: gainsboro;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+article img {
+    float: right;
+    width: 50%;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px darkgreen;
+}
+
+article h3 {
+    margin: 0;
+}
+
+article p {
+    padding-left: 10px;
+}
+
+#clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#contact_box {
+    padding: 8px 22%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
+}
+
+#map {
+    width: 250px;
+}
+
+
+footer img {
+    width: 10%;
+}
+
+#contact_info {
+    align-self: flex-end;
+    width: 30%;
+    background-color: white;
+    padding: 5px 30px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+#contact_info>* {
+    margin: 0;
+}
+
+#social_media img {
+    width: 40px;
+}
+
+#copyRight {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 5px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#copyRight a {
+    color: lightgreen;
+    text-decoration: underline;
+}
+

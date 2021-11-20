@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media_queires.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css"> -->
+    <script src="./js/index.js" defer></script>
+    <title>Preston Town</title>
+  </head>
+  <body>
+    <div id="saturday_notice">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+    <header>
+      <div id="top_bar">
+        <img
+          src="../Lesson3/image/Seasoning-icon.png"
+          alt="Icon"
+          id="website_logo"
+        />
+        <div>
+          <h1>Seasoning</h1>
+          <p id="motto">
+            What seasoning do you put in your life today? Check it out!
+          </p>
+        </div>
+      </div>
+      <nav>
+        <button id="menu" onclick="drop()">&#9776;</button>
+        <ul class="content">
+          <li><a href="../Lesson9/index.html">Home</a></li>
+          <li><a href="." id="active">Preston</a></li>
+          <li><a href=".">Soda Springs</a></li>
+          <li><a href=".">Fish Haven</a></li>
+          <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
+          <li><a href="../Lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Preston Idaho</h2>
+
+      <div id="banner_box">
+        <div id="summary">
+          <h3>Weather Summary</h3>
+          <div>
+            Currently: <span id="current-weather"></span> <br />
+            High: <span id="high"></span>°F<br />
+            Wind Chill: <span id="wind-chill"></span>°F<br />
+            Humidity: <span id="humidity"></span>%<br />
+            Wind Speed: <span id="wind-speed"></span>mph
+          </div>
+
+        </div>
+        <picture>
+          <source
+            media="(max-width:580px)"
+            srcset="./image/banner-small.jpeg"
+          />
+          <source
+            media="(max-width:1000px)"
+            srcset="./image/banner-medium.jpeg"
+          />
+          <img src="./image/banner-large.jpeg" alt="banner" id="banner" />
+        </picture>
+      </div>
+
+      <div id="d_forecast">Five Day Forecast</div>
+      <table id="forecast_table">
+        <tr id="first_row">
+
+        </tr>
+        <tr id="second_row">
+
+        </tr>
+        
+      </table>
+      <article id="clearfix">
+        <img src="./image/article_img.jpeg" alt="weather" />
+        <h3>Autumn</h3>
+        <p>
+          Season of the year between summer and winter during which
+          temperatures gradually decrease. It is often called fall in the United
+          States because leaves fall from the trees at that time. Autumn is
+          usually defined in the Northern Hemisphere as the period between the
+          autumnal equinox (day and night equal in length), September 22 or 23,
+          and the winter solstice (year’s shortest day), December 21 or 22; and
+          in the Southern Hemisphere as the period between March 20 or 21 and
+          June 21 or 22.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div id="contact_box">
+        <img id="map" src="./image/rexburg_map.gif" alt="map" />
+
+        <div id="contact_info">
+          <h5>Contact Us!</h5>
+          <p>
+            <img src="./image/location.png" alt="location" />Preston Town
+          </p>
+          <p>
+            <img src="./image/phone.png" alt="phone" />555-555-5555
+          </p>
+          <p>
+            <img src="./image/email.png" alt="email" />wildseasoning@li.com
+          </p>
+          <span id="social_media"
+            ><a href="https://www.facebook.com/"
+              ><img src="./image/facebook.gif" alt="facebook" id="facebook"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./image/instagram.gif"
+                alt="instagram"
+                id="instagram" /></a
+          ></span>
+        </div>
+      </div>
+
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jackson Chan | Idaho |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+        </b>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  </body>
+</html>
