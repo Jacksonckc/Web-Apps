@@ -1,6 +1,6 @@
 
 const fetchCurrentWeatherData = async () => {
-  let cityID = '5604473';
+  let cityID = '5607916';
   let key = 'ff64551a0d603239a02c046858ddfe50';
   let units = 'imperial';
   let request = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${key}&units=${units}`;
@@ -22,7 +22,7 @@ const fillInCurrentWeatherData = async () => {
 fillInCurrentWeatherData()
 
 const fetchFiveDayWeatherData = async () => {
-  const response = await fetch("https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff64551a0d603239a02c046858ddfe50&units=imperial")
+  const response = await fetch("https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=ff64551a0d603239a02c046858ddfe50&units=imperial")
   const data = await response.json()    
   let temps = parseData(data.list);
   fillInFiveDayWeatherData(temps)
@@ -78,7 +78,7 @@ const updateNextFiveDays = () =>{
   let day = now.getDay();
   let days = ['Sun','Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat']
   let container = document.getElementById('first_row')
-  for (let i = day+ 1; i < day + 6; i++){
+  for (let i = day + 1 ; i < day + 6; i++){
     let td = document.createElement('td')
     td.innerHTML = days[i%7]
     container.appendChild(td)
@@ -159,12 +159,13 @@ function calculate_wind_chill() {
   document.getElementById('wind-chill').innerHTML = wind_chill
 }
 
+
 function makeHTML() {
   try {
     fetch('./event.json')
     .then((response) => response.json())
       .then((data) => {
-          let fish_heaven_events = data.towns[5].events
+          let fish_heaven_events = data.towns[0].events
           createElements(fish_heaven_events)
           console.log(fish_heaven_events)
       });
@@ -185,5 +186,7 @@ const createElements = (array) => {
   });
   
 }
+
+
   
 makeHTML()
