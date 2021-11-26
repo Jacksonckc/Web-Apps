@@ -21,6 +21,8 @@ body p {
     z-index: 3;
     opacity: 0.7;
     transition: 2s;
+    pointer-events: none;
+
 }
 
 #event-box div {
