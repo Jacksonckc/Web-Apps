@@ -1,0 +1,26 @@
+{
+  "name": "web-frontend-development-1",
+  "version": "1.0.0",
+  "description": "Hi there, My name is Jackson Chan, I am from Hong Kong. I am a CS major and I love creating web, mobile applications using React and React Native.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacksonckc/Web-Frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacksonckc/Web-Frontend/issues"
+  },
+  "homepage": "https://github.com/Jacksonckc/Web-Frontend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "particlesjs": "^2.2.3"
+  }
+}

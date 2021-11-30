@@ -4,9 +4,14 @@ body {
     margin: 1rem auto;
     max-width: 850px;
 }
-
-
-
+ 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
 header {
     padding: 3% 5%;
     background-color: yellowgreen;
