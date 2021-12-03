@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Jacksonckc/Web-Frontend#readme",
   "dependencies": {
-    "express": "^4.17.1",
     "particlesjs": "^2.2.3"
   }
+
 }
