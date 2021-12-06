@@ -1,4 +1,3 @@
-
 const fetchCurrentWeatherData = async () => {
   let cityID = '5607916';
   let key = 'ff64551a0d603239a02c046858ddfe50';

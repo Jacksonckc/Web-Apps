@@ -1,0 +1,38 @@
+body {
+    font-size: large;
+}
+
+header {
+    display: block;
+    height: 150px;
+    img {
+        width: 20%;
+        max-width: 100px;
+        position: absolute;
+        left: 3%;
+    }
+    h2 {
+        margin: 0;
+        padding: 20px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        opacity: 1;
+        position: relative;
+        pointer-events: all;
+        background-color: $colorOne;
+        top: 0px;
+    }
+    #menu_button {
+        display: none;
+    }
+}
+main{
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+    }
+}

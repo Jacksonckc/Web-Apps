@@ -1,0 +1,26 @@
+header {
+    height: 200px;
+
+    img {
+        max-width: 130px;
+        left: 10%;
+    }
+    h2 {
+        font-size: xxx-large;
+    }
+    p {
+        font-size: x-large;
+    }
+    .content {
+        font-size: larger;
+    }
+}
+
+main{
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+    }
+}

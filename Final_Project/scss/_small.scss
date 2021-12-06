@@ -1,0 +1,169 @@
+body {
+    font-size: x-small;
+    position: relative;
+    background-color: $colorTwo;
+    min-width: 360px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: $colorOne;
+    position: sticky;
+    top: 0;
+
+    h2 {
+        margin: 20px 0 5px 0;
+        font-family: $fontFamilyHeaders;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+
+
+#menu_button {
+    margin: 10px 0px;
+    height: 60px;
+    width: 60px;
+    background-color: $colorOne;
+    font-size: xx-large;
+}
+
+.content {
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    padding: 5px;
+    font-size: large;
+    right: 0;
+    top: 80px;
+    margin: 0;
+
+    * {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    *:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    li:hover {
+        background-color: $colorTwo;
+    }
+    #active {
+        background-color: $colorThree;
+    }
+}
+
+.show_menu_content {
+    opacity: 0.8;
+    background-color: $colorOne;
+    pointer-events: all;
+}
+
+
+main {
+    min-height: 900px;
+    max-width: 900px;
+    margin: auto;
+    article {
+
+        ::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: $fontFamilyHeaders;
+            margin: 30px 20px 5px 20px;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: $colorThree;
+        }
+        p {
+            font-size: large;
+            margin: 0px 20px;
+            font-family: $fontFamilyParagraphs;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: $colorThree;
+            text-align: left;
+        }
+    }
+    #make_reservation_action {
+        input {
+            width: 90%;
+            border-radius: 5px;
+            font-size: large;
+        }
+        margin: 10px;
+
+    }
+    #contact_info {
+        margin: 5px 20px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: $colorThree;
+        font-size: larger;
+    }
+    padding-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    background-color: $colorOne;
+    padding: 5px;
+    #copyRight {
+        margin: 0;
+    }
+}
+
+
+// Templepage 
+
+#container {
+    margin: 20px;
+    .subContainer{
+        background-color: $colorThree;
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        .bold_char {
+            font-weight: bold;
+        }
+        p {
+            margin: 0px;
+            
+        }
+        .temple_history {
+            padding: 0px 20px;
+        }
+        h3, h4 {
+            margin: 10px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../scss/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/index.js" defer></script>
+    <title>Temple Inn & Suites</title>
+  </head>
+  <body>
+    <header>
+      <img src="../image/temple_logo.png" alt="icon" id="website_logo" />
+      <div id="head">
+        <h2 id="heading">Temple Inn & Suites</h2>
+        <p id="motto">We make trips to temple trips back home!</p>
+      </div>
+      <nav>
+        <button id="menu_button" onclick="dropMenuContent()">&#9776;</button>
+        <ul class="content">
+          <li id="active"><a href=".">Home</a></li>
+          <li><a href="../templepage/temple.html">Temple</a></li>
+          <li><a href="../reservationpage/reservation.html">Reservation</a></li>
+          <li><a href="../servicepage/service.html">Service</a></li>
+          <li><a href="../contactpage/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <img src="../image/FL_temple.jpeg" alt="Fort Lauderdale Temple" />
+        <h1>Fort Lauderdale Temple</h1>
+        <p>
+          The announcement that a temple would be built in south Florida was
+          made by church president Thomas S. Monson on October 3, 2009, during
+          the church's semi-annual general conference.[5] The temple was
+          announced concurrently with the Brigham City Utah, Concepción Chile,
+          Fortaleza Brazil and Sapporo Japan temples. It is the second temple
+          constructed in Florida and the first in the heavily populated southern
+          part of the state. The state's other temple, in Orlando, was completed
+          in 1994.
+        </p>
+      </article>
+      <div id="make_reservation_action">
+        <input type="button" onclick="location.href='../reservationpage/reservation.html'" value="RESERVE NOW!" />
+      </div>
+      <div id="contact_info">
+        <p id="phone_no">Telephon: 9876543210</p>
+        <p id="email">Email: sweettemplehome@gmail.com</p>
+        <p id="address">Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jackson Chan | Idaho |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+        </b>
+      </p>
+    </footer>
+  </body>
+</html>
