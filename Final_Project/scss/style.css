@@ -672,6 +672,7 @@ main form fieldset div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Source Serif Pro", serif;
 }
 
 main form fieldset div button {
@@ -703,6 +704,7 @@ main #reception img {
 
 main #reception h1 {
   text-align: center;
+  font-family: "Lobster", cursive;
 }
 
 main #full_time_mis {
@@ -726,6 +728,7 @@ main #full_time_mis img {
 main #full_time_mis h1 {
   line-height: 100%;
   text-align: center;
+  font-family: "Lobster", cursive;
 }
 
 main #full_time_mis h3 {
@@ -744,6 +747,7 @@ main iframe {
 main h2 {
   margin: 60px 0 10px 0;
   font-size: x-large;
+  font-family: "Lobster", cursive;
 }
 
 main #contact_form {

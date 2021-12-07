@@ -209,6 +209,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                font-family: $fontFamilyParagraphs;
                 button {
                     border-radius: 5px;
                     font-family: $fontFamilyHeaders;
@@ -237,8 +238,8 @@ main{
         border: 3px dotted black;
         h1 {
             text-align: center;
+            font-family: $fontFamilyHeaders;
         }
-
         max-width: 800px;
         background-color: $colorThree;
         margin: 20px;
@@ -258,7 +259,9 @@ main{
         h1 {
             line-height: 100%;
             text-align: center;
+            font-family: $fontFamilyHeaders;
         }
+
         max-width: 800px;
         background-color: $colorThree;
         margin: 20px;
@@ -284,6 +287,7 @@ main {
     h2 {
         margin: 60px 0 10px 0;
         font-size: x-large;
+        font-family: $fontFamilyHeaders;
     }
     #contact_form {
         height: 500px;
