@@ -455,6 +455,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 header h2 {
@@ -494,6 +495,7 @@ header p {
   padding: 10px;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
 .content *:hover {
@@ -517,22 +519,25 @@ header p {
 
 main {
   min-height: 900px;
-  max-width: 900px;
-  margin: auto;
   padding-bottom: 20px;
 }
 
-main article ::after {
+main #home_temple_article {
+  margin: auto;
+  max-width: 900px;
+}
+
+main #home_temple_article ::after {
   content: "";
   clear: both;
   display: table;
 }
 
-main article img {
+main #home_temple_article img {
   width: 100%;
 }
 
-main article h1 {
+main #home_temple_article h1 {
   text-align: center;
   font-family: "Lobster", cursive;
   margin: 30px 20px 5px 20px;
@@ -542,7 +547,7 @@ main article h1 {
   background-color: #B38C4D;
 }
 
-main article p {
+main #home_temple_article p {
   font-size: large;
   margin: 0px 20px;
   font-family: "Source Serif Pro", serif;
@@ -554,7 +559,8 @@ main article p {
 }
 
 main #make_reservation_action {
-  margin: 10px;
+  max-width: 900px;
+  margin: 10px auto;
 }
 
 main #make_reservation_action input {
@@ -563,8 +569,9 @@ main #make_reservation_action input {
   font-size: large;
 }
 
-main #contact_info {
-  margin: 5px 20px;
+main .contact_info {
+  max-width: 900px;
+  margin: 5px auto;
   border-radius: 5px;
   border: 2px solid black;
   background-color: #B38C4D;
@@ -594,10 +601,25 @@ footer #copyRight {
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+#container .subContainer .weather {
+  background-color: #B38C4D;
+  font-family: "Source Serif Pro", serif;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 #container .subContainer .bold_char {
   font-weight: bold;
+  font-family: "Lobster", cursive;
 }
 
 #container .subContainer p {
@@ -614,6 +636,118 @@ footer #copyRight {
 
 #container .subContainer img {
   width: 100%;
+}
+
+main form {
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px auto;
+  max-width: 900px;
+  font-size: large;
+}
+
+main form fieldset {
+  background-color: #B38C4D;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+main form fieldset div {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main form fieldset div button {
+  border-radius: 5px;
+  font-family: "Lobster", cursive;
+}
+
+main form fieldset legend {
+  font-family: "Lobster", cursive;
+  font-size: larger;
+  font-weight: bold;
+}
+
+main #reception {
+  line-height: 120%;
+  border-radius: 20px;
+  border: 3px dotted black;
+  max-width: 800px;
+  background-color: #B38C4D;
+  margin: 20px;
+  padding: 0 30px;
+  font-size: large;
+  text-align: left;
+}
+
+main #reception img {
+  width: 100%;
+}
+
+main #reception h1 {
+  text-align: center;
+}
+
+main #full_time_mis {
+  line-height: 120%;
+  display: none;
+  border-radius: 20px;
+  border: 3px dotted black;
+  max-width: 800px;
+  background-color: #B38C4D;
+  margin: 20px;
+  padding: 20px 30px;
+  font-size: large;
+  text-align: left;
+}
+
+main #full_time_mis img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main #full_time_mis h1 {
+  line-height: 100%;
+  text-align: center;
+}
+
+main #full_time_mis h3 {
+  text-align: center;
+  border: 3px solid #34623F;
+  border-radius: 50%;
+  padding: 35px;
+}
+
+main iframe {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+main h2 {
+  margin: 60px 0 10px 0;
+  font-size: x-large;
+}
+
+main #contact_form {
+  height: 500px;
 }
 
 @media only screen and (min-width: 580px) {
@@ -646,15 +780,44 @@ footer #copyRight {
     background-color: #34623F;
     top: 0px;
   }
+  header .content * {
+    width: 20%;
+  }
   header #menu_button {
     display: none;
   }
-  main #container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+  main form fieldset div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main {
+    margin: auto;
+  }
+  main #reception {
+    position: relative;
+    padding: 0 50px;
+    font-size: larger;
+    margin: 20px 50px;
+  }
+  main #reception img {
+    width: 30%;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+  }
+  main #full_time_mis {
+    padding: 20px 50px;
+    font-size: larger;
+    margin: 20px 50px;
+  }
+  main h2 {
+    margin: 60px 0 0 0;
+    font-size: xx-large;
+  }
+  main #contact_form {
+    height: 300px;
   }
 }
 
@@ -681,6 +844,16 @@ footer #copyRight {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  main #reception {
+    margin: 20px auto;
+  }
+  main #reception img {
+    top: 130px;
+    width: 40%;
+  }
+  main #full_time_mis {
+    margin: 20px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

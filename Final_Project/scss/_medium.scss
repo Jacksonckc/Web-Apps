@@ -23,16 +23,59 @@ header {
         pointer-events: all;
         background-color: $colorOne;
         top: 0px;
+        * {
+            width: 20%;
+        }
     }
     #menu_button {
         display: none;
     }
 }
-main{
-    #container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
 
+
+// Reservation Page
+main {
+    form{
+        fieldset{
+            div{
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+// service page
+main {
+    margin: auto;
+    #reception {
+        position: relative;
+        padding: 0 50px;
+        font-size: larger;
+        margin: 20px 50px;
+        img {
+            width: 30%;
+            position: absolute;
+            right: 20px;
+            top: 100px;
+        }
+    }
+
+    #full_time_mis {
+        padding: 20px 50px;
+        font-size: larger;
+        margin: 20px 50px;
+    
+    }
+}
+
+// contact page
+main {
+
+    h2 {
+        margin: 60px 0 0 0;
+        font-size: xx-large;
+    }
+    #contact_form {
+        height: 300px;
     }
 }

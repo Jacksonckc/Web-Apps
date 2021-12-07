@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../scss/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
     <script src="../js/index.js" defer></script>
     <title>Temple Inn & Suites</title>
   </head>
@@ -21,14 +25,115 @@
         <ul class="content">
           <li><a href="../homepage/index.html">Home</a></li>
           <li><a href="../templepage/temple.html">Temple</a></li>
-          <li id="active"><a href="../reservationpage/reservation.html">Reservation</a></li>
+          <li id="active">
+            <a href="../reservationpage/reservation.html">Reservation</a>
+          </li>
           <li><a href="../servicepage/service.html">Service</a></li>
           <li><a href="../contactpage/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <form action="confirm.html" method="get">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              pattern="[A-za-z]{5,}"
+              title="Only accepts alpha characters with a minimum of five characters"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="examplemail@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+          <div>
+            <label for="home">Home State/Country:</label>
+            <input type="text" name="home" id="home" required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Booking Information</legend>
+          <div>
+            <label for="location">Hotel Location</label>
+            <input type="text" name="location" id="location" />
+          </div>
+          <div>
+            <label for="start_date">Start Date:</label>
+            <input type="date" name="start_date" id="start_date" />
+          </div>
+          <div>
+            <label for="end_date">End Date:</label>
+            <input type="date" name="end_date" id="end_date" />
+          </div>
+          <div>
+            <label for="list">Room Type:</label>
+
+            <input list="lists" name="list" id="list" />
+            <datalist id="lists">
+              <option value="Single Room"></option>
+              <option value="Double Room"></option>
+              <option value="Quad Room"></option>
+              <option value="Studio"></option>
+              <option value="Suite"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="number_of_room">Number of Room Needed(1-3):</label>
+            <div>
+              <input
+                type="range"
+                name="number_of_room"
+                id="number_of_room"
+                min="0"
+                max="3"
+                value="1"
+                onchange="get_room_number()"
+              />
+              <span id="room_required">1</span>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Other Information</legend>
+          <div>
+            <label for="comment">Special Accommodations/Comments:</label> <br />
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Food alergies etc."
+            ></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="contact_info">
+        <p class="phone_no">Telephon: 9876543210</p>
+        <p class="email">Email: sweettemplehome@gmail.com</p>
+        <p class="address">Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      </div>
+    </main>
 
     <footer>
       <p id="copyRight">

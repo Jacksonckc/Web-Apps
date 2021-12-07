@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../scss/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
     <script src="../js/index.js" defer></script>
     <title>Temple Inn & Suites</title>
   </head>
-  <body>
+  <body onload="templePageStuff()">
     <header>
       <img src="../image/temple_logo.png" alt="icon" id="website_logo" />
       <div id="head">
@@ -32,8 +36,19 @@
       <div id="container">
         <div class="subContainer">
           <img src="../image/FL_temple.jpeg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+
           <p><span class="bold_char">Telephone:</span> +1 (954) 382-8390</p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Services: </span> <br />No clothing
             rental available <br />
@@ -41,13 +56,13 @@
             No patron housing available <br />
             No distribution center nearby
           </p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Closure Schedule:</span> <br />
             Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
             Friday, 31 December 2021 - Saturday, 1 January 2022
           </p>
-          <br>
+          <br />
           <p class="temple_history">
             <span class="bold_char">Temple History:</span><br />The announcement
             that a temple would be built in south Florida was made by church
@@ -59,101 +74,134 @@
             southern part of the state. The state's other temple, in Orlando,
             was completed in 1994.
           </p>
-          <br>
+          <br />
         </div>
         <div class="subContainer">
           <img src="../image/HK_temple.jpeg" alt="" />
-          <p><span class="bold_char">Telephone:</span> +1 (954) 382-8390</p>
-          <br>
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+          <p><span class="bold_char">Telephone:</span> + 852 2339 8100</p>
+          <br />
           <p>
-            <span class="bold_char">Temple Services: </span> <br />No clothing
+            <span class="bold_char">Temple Services: </span> <br />Clothing
             rental available <br />
-            No cafeteria available <br />
-            No patron housing available <br />
-            No distribution center nearby
+            NO cafeteria food served <br />
+            Patron housing available <br />
+            Distribution center nearby
           </p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Closure Schedule:</span> <br />
-            Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
-            Friday, 31 December 2021 - Saturday, 1 January 2022
+            The Hong Kong China Temple is the only temple to have had a steeple
+            and angel Moroni statue permanently removed as part of a renovation.
+            The steeple stood atop the building from the time of its dedication
+            in 1996 until its renovation closure in 2019.
           </p>
-          <br>
+          <br />
           <p class="temple_history">
-            <span class="bold_char">Temple History:</span><br />The announcement
-            that a temple would be built in south Florida was made by church
-            president Thomas S. Monson on October 3, 2009, during the church's
-            semi-annual general conference.[5] The temple was announced
-            concurrently with the Brigham City Utah, Concepción Chile, Fortaleza
-            Brazil and Sapporo Japan temples. It is the second temple
-            constructed in Florida and the first in the heavily populated
-            southern part of the state. The state's other temple, in Orlando,
-            was completed in 1994.
+            <span class="bold_char">Temple History:</span><br />The Hong Kong
+            China Temple was the first temple built in China and the second
+            built in mainland Asia, following the Seoul Korea Temple (1985).
           </p>
-          <br>
+          <br />
         </div>
         <div class="subContainer">
           <img src="../image/RB_temple.jpg" alt="" />
-          <p><span class="bold_char">Telephone:</span> +1 (954) 382-8390</p>
-          <br>
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+          <p><span class="bold_char">Telephone:</span> +1 (208) 656-0880</p>
+          <br />
           <p>
-            <span class="bold_char">Temple Services: </span> <br />No clothing
+            <span class="bold_char">Temple Services: </span> <br />Clothing
             rental available <br />
             No cafeteria available <br />
             No patron housing available <br />
-            No distribution center nearby
+            Distribution center nearby
           </p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Closure Schedule:</span> <br />
+            Wednesday, 24 November 2021 - Thursday, 25 November 2021 <br />
+            Saturday, 18 December 2021 (Limited Operations) <br />
             Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
-            Friday, 31 December 2021 - Saturday, 1 January 2022
+            Friday, 31 December 2021 - Saturday, 1 January 2022 <br />
           </p>
-          <br>
+          <br />
           <p class="temple_history">
-            <span class="bold_char">Temple History:</span><br />The announcement
-            that a temple would be built in south Florida was made by church
-            president Thomas S. Monson on October 3, 2009, during the church's
-            semi-annual general conference.[5] The temple was announced
-            concurrently with the Brigham City Utah, Concepción Chile, Fortaleza
-            Brazil and Sapporo Japan temples. It is the second temple
-            constructed in Florida and the first in the heavily populated
-            southern part of the state. The state's other temple, in Orlando,
-            was completed in 1994.
+            <span class="bold_char">Temple History:</span><br />Announced in
+            late 2003, the temple was dedicated on February 10, 2008[1] and was
+            the first temple dedicated by Thomas S. Monson as the church's new
+            president. The Rexburg Idaho Temple was the third LDS temple in
+            Idaho. (Later in 2008, a fourth Idaho temple was dedicated in Twin
+            Falls.) The temple sits south of the Brigham Young University–Idaho
+            (BYU–Idaho) campus on the south side of Rexburg. Prior to its
+            completion, BYU–Idaho had been the only LDS Church-owned university
+            without a temple adjacent to its campus.
           </p>
-          <br>
+          <br />
         </div>
         <div class="subContainer">
           <img src="../image/SL_temple.jpg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
           <p><span class="bold_char">Telephone:</span> +1 (954) 382-8390</p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Services: </span> <br />No clothing
             rental available <br />
             No cafeteria available <br />
-            No patron housing available <br />
-            No distribution center nearby
+            patron housing available <br />
+            distribution center nearby
           </p>
-          <br>
+          <br />
           <p>
             <span class="bold_char">Temple Closure Schedule:</span> <br />
-            Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
-            Friday, 31 December 2021 - Saturday, 1 January 2022
+            Temple closed during renovation
           </p>
-          <br>
+          <br />
           <p class="temple_history">
-            <span class="bold_char">Temple History:</span><br />The announcement
-            that a temple would be built in south Florida was made by church
-            president Thomas S. Monson on October 3, 2009, during the church's
-            semi-annual general conference.[5] The temple was announced
-            concurrently with the Brigham City Utah, Concepción Chile, Fortaleza
-            Brazil and Sapporo Japan temples. It is the second temple
-            constructed in Florida and the first in the heavily populated
-            southern part of the state. The state's other temple, in Orlando,
-            was completed in 1994.
+            <span class="bold_char">Temple History:</span><br />The Salt Lake
+            Temple is a temple of The Church of Jesus Christ of Latter-day
+            Saints on Temple Square in Salt Lake City, Utah, United States. At
+            253,015 square feet (23,505.9 m2), it is the largest Latter-day
+            Saint temple by floor area. Dedicated in 1893, it is the sixth
+            temple completed by the church, requiring 40 years to complete, and
+            the fourth temple built since the Mormon exodus from Nauvoo,
+            Illinois, in 1846.[1] The temple was closed in December 2019 for a
+            general remodelling and seismic renovations that are anticipated to
+            take approximately four years.[2]
           </p>
-          <br>
+          <br />
         </div>
+      </div>
+      <div class="contact_info">
+        <p class="phone_no">Telephon: 9876543210</p>
+        <p class="email">Email: sweettemplehome@gmail.com</p>
+        <p class="address">Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
       </div>
     </main>
 
