@@ -4,7 +4,8 @@ body {
 
 header {
     display: block;
-    height: 150px;
+    height: 130px;
+    margin-bottom: 50px;
     img {
         width: 20%;
         max-width: 100px;
@@ -54,6 +55,7 @@ main {
         margin: 20px 50px;
         img {
             width: 30%;
+            max-width: 300px;
             position: absolute;
             right: 20px;
             top: 100px;

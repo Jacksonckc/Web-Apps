@@ -687,6 +687,7 @@ main form fieldset legend {
 }
 
 main #reception {
+  cursor: pointer;
   line-height: 120%;
   border-radius: 20px;
   border: 3px dotted black;
@@ -708,6 +709,7 @@ main #reception h1 {
 }
 
 main #full_time_mis {
+  cursor: pointer;
   line-height: 120%;
   display: none;
   border-radius: 20px;
@@ -760,7 +762,8 @@ main #contact_form {
   }
   header {
     display: block;
-    height: 150px;
+    height: 130px;
+    margin-bottom: 50px;
   }
   header img {
     width: 20%;
@@ -807,6 +810,7 @@ main #contact_form {
   }
   main #reception img {
     width: 30%;
+    max-width: 300px;
     position: absolute;
     right: 20px;
     top: 100px;
