@@ -764,6 +764,7 @@ main #contact_form {
     display: block;
     height: 130px;
     margin-bottom: 50px;
+    top: -102.8px;
   }
   header img {
     width: 20%;
@@ -831,7 +832,8 @@ main #contact_form {
 
 @media only screen and (min-width: 1000px) {
   header {
-    height: 200px;
+    height: 150px;
+    top: -133.1px;
   }
   header img {
     max-width: 130px;
